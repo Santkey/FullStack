@@ -8,37 +8,35 @@
         <h1>Course Sign Up Page</h1>
 
         <p>Please Note: First Name, Last Name, Password, and Email are required!</p>
+        <form action="thank_you.html" method="get">
+        <label for="fm">First Name:</label>
+        <input type="text" name="First Name" placeholder="First name" required>
 
-        <label for="psw">First Name:</label>
-        <input type="text" name="First Name" value="First name">
+        <label for="lm">Last Name:</label>
+        <input type="text" name="Last Name" placeholder="Last name" required><br><br>
 
-        <label for="psw">Last Name:</label>
-        <input type="text" name="Last Name" value="Last name"><br><br>
+        <label for="em">Email:</label>
+        <input type="email" name="email" placeholder="Enter E-mail" required>
 
-        <label for="psw">Email:</label>
-        <input type="email" name="useremail" value="Enter E-mail">
+        <label for="pwd">Password:</label>
+        <input type="password" name="userpwd" placeholder="Password" required><br><br>
 
-        <label for="psw">Password:</label>
-        <input type="password" name="userpwd" value="Password"><br><br>
+        <p>Are you over the age of 18 ?</p>
+        <label for="y">Yes:</label>
+        <input id="y" type="radio" name="over" value="yes">
+        <label for="n">No:</label>
+        <input id="n" type="radio" name="over" value="no">
 
-        <div id="wrapper">
-            <label for="yes_no_radio">Are you over the age of 18 ?</label>
-          <p>
-          <input type="radio" name="yes_no" checked>Yes</input>
-          </p>
-          <p>
-          <input type="radio" name="yes_no">No</input>
-          </p>
-          </div>
 
         <p>Do you have a Credit Card or PayPal?</p>
 
-        <select name="cars" id="cars">
-            <option value="Credit Card">Credit Card</option>
-            <option value="PayPal">PayPal</option>
+        <select name="payments">
+            <option value="cc">Credit Card</option>
+            <option value="pp">PayPal</option>
         </select><br><br>
 
 
 <input type="submit" name="" value="Sign Up">
+        </form>
     </body>
 </html>
