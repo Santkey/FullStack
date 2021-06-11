@@ -5,11 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-<form action="https://santisky.prv.pl" method="get">
-    <p>Enter Some Text: </p>
-    <input type="email" name="usermail" value="">
-    <input type="submit" name="" value="Submit">
+    <form>
+        <!-- using a label with for 
+        value - black text -needs to be deleted
+        placeholder - dissapears as soon as you type-->
 
-</form>
+        <!-- <label for="userinput">Enter Input:</label> -->
+        <input type="text" name="" placeholder="not required">
+
+        <input id="userinput" type="text" name="" placeholder="required" required>
+
+        <input type="submit" name="" value="Submit">
+
+    </form>
 </body>
 </html>
